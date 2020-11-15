@@ -46,3 +46,19 @@ $font-size-header-3: 2.5rem;
     width: 150px;
     background-color: blue;
 }
+
+@mixin centerVH{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin centerColumnVH{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin boxShadow{
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+}
