@@ -6,22 +6,27 @@ export default function LoginComponent() {
     const [input, setInput] = useState({email:"", password:""})
     return (
         
-<div className="login-box">
+<form className="login-box">
     <div>
     <h1>Login</h1>
     </div>
   <div>
-      <label>Email</label>
-  <input name="email" type="email" placeholder="email"/>
+    
+  <input 
+  name="email" 
+  type="email" 
+  value =""
+  placeholder="email"/>
   </div>
   <div>
-  <label>Password</label>
-  <input name="password" type="password" placeholder="password"/>
+  <input 
+  name="password"
+   type="password" 
+   value=""
+   placeholder="password"/>
   </div>
   <input type="button" className="btn" value="Sign in"/>
-
-   </div>
-
+   </form>
        
         )
 }
